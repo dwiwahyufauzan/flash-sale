@@ -18,7 +18,7 @@
       <p class="text-sm/6 text-gray-900">
         <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" class="mx-2 inline size-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
       </p>
-      <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
+      <a href="register.html" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
     </div>
     <div class="flex flex-1 justify-end">
       <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
@@ -96,162 +96,102 @@
   </header>  
 <!--end header-->
 
-<!--heading-->
-<div class="border-b border-gray-200 pb-5">
-    <h3 class="text-3xl font-semibold text-gray-900 text-center mt-6">Cart</h3>
-</div>
-<!-- end heading-->
-
-<!--detail product-->
-<div class="bg-white">
-    <div class="mx-auto max-w-7xl overflow-hidden px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div class="flex justify-center items-center">
-            <div class="group text-sm flex flex-col lg:flex-row justify-center items-center lg:items-start">
-                <!-- Gambar Produk 1-->
-                <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-07-product-01.jpg" alt="White fabric pouch with white zipper, black zipper pull, and black elastic loop." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75">
-                </div>
-                
-                <!-- Keterangan Produk -->
-                <div class="w-full lg:w-1/2 lg:pl-8 text-center lg:text-left">
-                    <!-- Judul Produk -->
-                    <h3 class="font-medium text-gray-900 text-3xl lg:text-4xl">Nomad Pouch</h3>
-                    <!-- Keterangan Warna -->
-                    <p class="text-gray-500 italic text-xl lg:text-2xl">White and Black</p>
-                    <!-- Harga Produk -->
-                    <p class="mt-2 font-medium text-gray-900 text-2xl lg:text-3xl">$50</p>
-
-                    <!-- Deskripsi Produk -->
-                    <p class="mt-4 text-gray-700 text-lg lg:text-xl">This Nomad Pouch is perfect for organizing your small items in a stylish way. With a white fabric body, black zipper pull, and black elastic loop, it's both functional and fashionable.</p>
-
-                    <!-- Tombol untuk kembali ke katalog atau beli -->
-                    <a href="cart.html" class="inline-block mt-6 px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Add To Cart</a>
-                    <a href="check-out.html" class="inline-block mt-6 px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Buy Now</a>
-                </div>
-            </div>
-        </div>
+<!--promotion-->
+<div class="relative overflow-hidden bg-white">
+    <!-- Decorative background image and gradient -->
+    <div aria-hidden="true" class="absolute inset-0">
+      <div class="absolute inset-0 mx-auto max-w-7xl overflow-hidden xl:px-8">
+        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-sale-full-width.jpg" alt="" class="size-full object-cover">
+      </div>
+      <div class="absolute inset-0 bg-white/75"></div>
+      <div class="absolute inset-0 bg-linear-to-t from-white via-white"></div>
     </div>
-</div>
-<!--end detail product-->
+  
+    <!-- Callout -->
+    <section aria-labelledby="sale-heading" class="relative mx-auto flex max-w-7xl flex-col items-center px-4 pt-32 text-center sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:max-w-none">
+        <h2 id="sale-heading" class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">Get 25% off during our one-time sale</h2>
+        <p class="mx-auto mt-4 max-w-xl text-xl text-gray-600">Most of our products are limited releases that won't come back. Get your favorite items while they're in stock.</p>
+        <a href="#" class="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto">Get access to our one-time sale</a>
+      </div>
+    </section>
+  </div>  
 
-<!--info cart-->
-<div class="relative z-10" role="dialog" aria-modal="true">
-    <!--
-      Background backdrop, show/hide based on modal state.
+<!--end promotion-->
+
+<!-- Order History -->
+<div class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:pb-24">
+      <div class="max-w-xl">
+        <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Order History</h1>
+        <p class="mt-2 text-sm text-gray-500">Check your recent orders, manage returns, and download invoices.</p>
+      </div>
   
-      Entering: "ease-out duration-300"
-        From: "opacity-0"
-        To: "opacity-100"
-      Leaving: "ease-in duration-200"
-        From: "opacity-100"
-        To: "opacity-0"
-    -->
-    <div class="hidden sm:fixed sm:inset-0 sm:block sm:bg-gray-500/75 sm:transition-opacity" aria-hidden="true"></div>
-  
-    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-      <div class="flex min-h-full items-stretch justify-center text-center sm:items-center sm:px-6 lg:px-8">
-        <!--
-          Modal panel, show/hide based on modal state.
-  
-          Entering: "ease-out duration-300"
-            From: "opacity-0 scale-105"
-            To: "opacity-100 scale-100"
-          Leaving: "ease-in duration-200"
-            From: "opacity-100 scale-100"
-            To: "opacity-0 scale-105"
-        -->
-        <div class="flex w-full max-w-3xl transform text-left text-base transition sm:my-8">
-          <form class="relative flex w-full flex-col overflow-hidden bg-white pt-6 pb-8 sm:rounded-lg sm:pb-6 lg:py-8">
-            <div class="flex items-center justify-between px-4 sm:px-6 lg:px-8">
-                <h2 class="text-lg font-medium text-gray-900">Shopping Cart</h2>
-                
-                <a href="detail-produk.html" class="text-gray-400 hover:text-gray-500">
-                  <span class="sr-only">Close</span>
-                  <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>
-                </a>
-              </div>              
-            <section aria-labelledby="cart-heading">
-              <h2 id="cart-heading" class="sr-only">Items in your shopping cart</h2>
-  
-              <ul role="list" class="divide-y divide-gray-200 px-4 sm:px-6 lg:px-8">
-                <li class="flex py-8 text-sm sm:items-center">
-                  <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-07-product-01.jpg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="size-24 flex-none rounded-lg border border-gray-200 sm:size-32">
-                  <div class="ml-4 grid flex-auto grid-cols-1 grid-rows-1 items-start gap-x-5 gap-y-3 sm:ml-6 sm:flex sm:items-center sm:gap-0">
-                    <div class="row-end-1 flex-auto sm:pr-6">
-                      <h3 class="font-medium text-gray-900">
-                        <a href="#">Nomand Pouch</a>
-                      </h3>
-                      <p class="mt-1 text-gray-500">White and black</p>
-                    </div>
-                    <p class="row-span-2 row-end-2 font-medium text-gray-900 sm:order-1 sm:ml-6 sm:w-1/3 sm:flex-none sm:text-right">$50</p>
-                    <div class="flex items-center sm:block sm:flex-none sm:text-center">
-                      <div class="inline-grid w-full max-w-16 grid-cols-1">
-                        <select name="quantity-0" aria-label="Quantity, Zip Tote Basket" class="col-start-1 row-start-1 appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                        </select>
-                        <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
-                          <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                      <button type="button" class="ml-4 font-medium text-indigo-600 hover:text-indigo-500 sm:mt-2 sm:ml-0">
-                        <span>Remove</span>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-  
-                <!-- More products... -->
-              </ul>
-            </section>
-  
-            <section aria-labelledby="summary-heading" class="mt-auto sm:px-6 lg:px-8">
-              <div class="bg-gray-50 p-6 sm:rounded-lg sm:p-8">
-                <h2 id="summary-heading" class="sr-only">Order summary</h2>
-  
-                <div class="flow-root">
-                  <dl class="-my-4 divide-y divide-gray-200 text-sm">
-                    <div class="flex items-center justify-between py-4">
-                      <dt class="text-gray-600">Subtotal</dt>
-                      <dd class="font-medium text-gray-900">$50</dd>
-                    </div>
-                    <div class="flex items-center justify-between py-4">
-                      <dt class="text-gray-600">Shipping</dt>
-                      <dd class="font-medium text-gray-900">$5.00</dd>
-                    </div>
-                    <div class="flex items-center justify-between py-4">
-                      <dt class="text-gray-600">Tax</dt>
-                      <dd class="font-medium text-gray-900">$50.50</dd>
-                    </div>
-                    <div class="flex items-center justify-between py-4">
-                      <dt class="text-base font-medium text-gray-900">Order total</dt>
-                      <dd class="text-base font-medium text-gray-900">$50.50</dd>
-                    </div>
-                  </dl>
-                </div>
+      <div class="mt-16 space-y-20">
+        <!-- Single Order -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <div class="bg-gray-50 px-4 py-6 sm:flex sm:items-center sm:justify-between sm:px-6">
+            <dl class="text-sm text-gray-600 sm:grid sm:grid-cols-3 sm:gap-x-6">
+              <div>
+                <dt class="font-medium text-gray-900">Date placed</dt>
+                <dd class="mt-1"><time datetime="2021-01-22">January 22, 2025</time></dd>
               </div>
-            </section>
+              <div class="mt-4 sm:mt-0">
+                <dt class="font-medium text-gray-900">Order number</dt>
+                <dd class="mt-1">WU88191111</dd>
+              </div>
+              <div class="mt-4 sm:mt-0">
+                <dt class="font-medium text-gray-900">Total amount</dt>
+                <dd class="mt-1 font-medium text-gray-900">$238.00</dd>
+              </div>
+            </dl>
+            <div class="mt-6 sm:mt-0">
+              <a href="#" class="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                View Invoice<span class="sr-only"> for order WU88191111</span>
+              </a>
+            </div>
+          </div>
   
-            <div class="mt-8 flex justify-end px-4 sm:px-6 lg:px-8">
-                <a href="checkout.html" class="rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-xs hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-hidden">
-                  Continue to Payment
-                </a>
-              </div>              
-          </form>
+          <!-- Product Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left text-gray-500">
+              <thead class="sr-only sm:not-sr-only bg-white border-t border-gray-200">
+                <tr>
+                  <th class="py-3 px-6 font-medium text-gray-900 sm:w-1/2">Product</th>
+                  <th class="py-3 px-6 hidden sm:table-cell">Price</th>
+                  <th class="py-3 px-6 hidden sm:table-cell">Status</th>
+                  <th class="py-3 px-6 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200 bg-white">
+                <tr>
+                  <td class="py-6 px-6">
+                    <div class="flex items-center">
+                      <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-07-product-01.jpg" alt="Machined Pen and Pencil Set" class="w-16 h-16 rounded object-cover mr-4">
+                      <div>
+                        <div class="font-medium text-gray-900">Nomad Pouch</div>
+                        <div class="mt-1 text-sm sm:hidden">$50</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-6 px-6 hidden sm:table-cell">$50</td>
+                  <td class="py-6 px-6 hidden sm:table-cell">Delivered Jan 25, 2021</td>
+                  <td class="py-6 px-6 text-right">
+                    <a href="#" class="text-indigo-600 hover:text-indigo-900">View<span class="hidden lg:inline"> Product</span><span class="sr-only">, Machined Pen and Pencil Set</span></a>
+                  </td>
+                </tr>
+  
+                <!-- Tambah produk lainnya di sini jika diperlukan -->
+              </tbody>
+            </table>
+          </div>
         </div>
+  
+        <!-- Tambah order lainnya di sini jika diperlukan -->
       </div>
     </div>
   </div>
-<!--end cart info-->
-
+  <!-- End Order History --> 
 
 <!--cta-->
 <div class="relative isolate overflow-hidden bg-gray-900">
@@ -274,7 +214,7 @@
         </radialGradient>
       </defs>
     </svg>
-  </div> 
+  </div>     
 <!--end cta-->
 
 <!--footer-->
@@ -403,7 +343,7 @@
         <p class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2024 Your Company, Inc. All rights reserved.</p>
       </div>
     </div>
-  </footer>  
+  </footer>
 <!--end footer-->
 </body>
 </html>
